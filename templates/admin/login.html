@@ -1,0 +1,1 @@
+{% extends 'admin/login.html' %}{% block content_title %}<h1>Welcome to the newsroom.</h1><p class="login-intro">Sign in with your staff account to manage LankaNow.</p>{% endblock %}{% block content %}{{ block.super }}<p class="reset-link"><a href="{% url 'password_reset' %}">Forgot your password?</a></p>{% endblock %}

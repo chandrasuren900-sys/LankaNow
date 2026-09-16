@@ -1,0 +1,22 @@
+LANKANOW — KNOW NOW.
+
+WINDOWS QUICK START
+
+1. Extract the whole ZIP into a new folder.
+2. Install Python 3.12+ from python.org if it is not already installed.
+3. Double-click START-WINDOWS.bat.
+4. Create your own administrator account when prompted.
+5. Keep the terminal open and visit:
+
+   Website:  http://127.0.0.1:8000/
+   Newsroom: http://127.0.0.1:8000/admin/
+
+No manual file replacement is needed.
+No preconfigured admin account is included.
+Your articles are saved in a real database, not browser localStorage.
+
+This is a backend application. Opening an HTML file directly will not run it.
+Read README.md for publishing and DEPLOYMENT.md before putting it online.
+
+Email and public hosting need your configuration. The website starts with
+honest empty states; publish your verified stories to populate the pages.

@@ -1,0 +1,10 @@
+const menu = document.querySelector('.menu-button');
+menu?.addEventListener('click', () => {
+  const open = menu.getAttribute('aria-expanded') !== 'true';
+  menu.setAttribute('aria-expanded', String(open));
+  document.querySelector('#navigation').classList.toggle('is-open', open);
+});
+document.querySelector('.copy-link')?.addEventListener('click', async (event) => {
+  try { await navigator.clipboard.writeText(location.href); event.target.textContent = 'Link copied'; }
+  catch { event.target.textContent = 'Copy the address from your browser'; }
+});

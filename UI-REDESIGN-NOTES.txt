@@ -1,0 +1,35 @@
+LankaNow — Minimal Glass UI Redesign
+====================================
+
+Design direction
+- Original interface inspired by the provided editorial dashboard reference, without copying it.
+- Monochrome black / white / graphite palette.
+- Subtle frosted-glass surfaces and soft grain texture.
+- Desktop editorial side rail + compact sticky top bar.
+- Large cinematic lead story, separate live-signal / trending column.
+- Clean story cards, section discovery, and quieter typography.
+- Responsive mobile drawer navigation.
+
+Changed files
+- templates/news/base.html
+- templates/news/home.html
+- templates/news/card.html
+- static/css/site.css
+- static/js/site.js
+
+Backups of the previous UI are included beside the changed files with the suffix:
+.pre-redesign
+
+Backend / admin
+- No database models were changed.
+- No admin code was changed.
+- No migrations are required.
+- Existing articles, categories, media, users, SEO, newsletter and publishing logic remain intact.
+
+Validation
+- Django system check: passed.
+- Django test suite: 28 tests passed with local DEBUG mode enabled.
+
+Run on Windows
+- Use START-WINDOWS.bat as before, or your existing local startup method.
+- Then refresh the browser with Ctrl+F5 so the new CSS is loaded.
